@@ -25,6 +25,14 @@ public class MainActivity extends AppCompatActivity {
         Drawable drawable = textView.getBackground();
         Log.e(TAG, "bg:" + drawable + "w:" + drawable.getIntrinsicWidth()
                 + " h:" + drawable.getIntrinsicHeight());
+
+        findViewById(R.id.ringProgressBtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ShowActivity.class).putExtra("flag",
+                        1));
+            }
+        });
     }
 
     @Override
