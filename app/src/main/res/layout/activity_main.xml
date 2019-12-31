@@ -175,7 +175,7 @@
             android:id="@+id/remindNumBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="数字提示" />
+            android:text="其余一些效果" />
     </LinearLayout>
 
 </ScrollView>
