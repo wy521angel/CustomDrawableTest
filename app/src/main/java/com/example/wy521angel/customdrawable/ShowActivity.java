@@ -15,6 +15,9 @@ public class ShowActivity extends AppCompatActivity {
             case 1:
                 setContentView(R.layout.activity_ring_progress);
                 break;
+            case 2:
+                setContentView(R.layout.activity_show);
+                break;
             default:
         }
 

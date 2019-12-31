@@ -33,6 +33,14 @@ public class MainActivity extends AppCompatActivity {
                         1));
             }
         });
+
+        findViewById(R.id.remindNumBtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ShowActivity.class).putExtra("flag",
+                        2));
+            }
+        });
     }
 
     @Override
