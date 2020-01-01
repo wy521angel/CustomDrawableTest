@@ -61,6 +61,14 @@
             android:layout_height="250dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/gem_transition_drawable" />
+
+        <ImageView
+            android:id="@+id/gemIv3"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/clip_drawable_image" />
     </LinearLayout>
 
 </ScrollView>
