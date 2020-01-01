@@ -1,45 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="20dp">
+    android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:background="@drawable/remind_num_drawable"
-        android:gravity="center"
-        android:text="99"
-        android:textColor="#fff" />
-
-    <EditText
-        android:layout_width="200dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/edit_bg_drawable" />
+        android:orientation="vertical"
+        android:padding="20dp">
 
-    <View
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/shadow_round_rectangle_bg_drawable" />
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/remind_num_drawable"
+            android:gravity="center"
+            android:text="99"
+            android:textColor="#fff" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/button_select_bg_drawable"
-        android:text="状态测试1"
-        android:textColor="@android:color/white" />
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_bg_drawable" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/button_select_bg_drawable2"
-        android:text="状态测试2"
-        android:textColor="@android:color/white" />
-</LinearLayout>
+        <View
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shadow_round_rectangle_bg_drawable" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_select_bg_drawable"
+            android:text="状态测试1"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_select_bg_drawable2"
+            android:text="状态测试2"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/gemIv"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+</ScrollView>
