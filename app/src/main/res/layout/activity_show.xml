@@ -27,4 +27,19 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/shadow_round_rectangle_bg_drawable" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_select_bg_drawable"
+        android:text="状态测试1"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_select_bg_drawable2"
+        android:text="状态测试2"
+        android:textColor="@android:color/white" />
 </LinearLayout>
