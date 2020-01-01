@@ -2,6 +2,7 @@ package com.example.wy521angel.customdrawable;
 
 import android.annotation.SuppressLint;
 import android.graphics.Color;
+import android.graphics.drawable.TransitionDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -37,17 +38,20 @@ public class ShowActivity extends AppCompatActivity {
                 break;
             case 2:
                 setContentView(R.layout.activity_show);
+                //实现图片切换
                 imageView = (ImageView) findViewById(R.id.gemIv);
                 imageView.setImageResource(R.drawable.list_drawable);
                 imageView.setImageLevel(0);
-
                 for (int i = 1; i < 4; i++) {
                     handler.sendEmptyMessageDelayed(i, i * 2000);
                 }
+
+                //实现图片渐变
+                View view = findViewById(R.id.gemIv2);
+                TransitionDrawable drawable = (TransitionDrawable) view.getBackground();
+                drawable.startTransition(4000);
                 break;
             default:
         }
-
-
     }
 }
